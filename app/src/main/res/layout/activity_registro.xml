@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="80dp"
+    tools:context=".RegistroActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/nome"
+            android:hint="nome"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/email"
+            android:hint="email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true">
+        <EditText
+            android:id="@+id/senha"
+            android:hint="senha"
+            android:inputType="textPassword"
+            android:textColor="@color/colorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true">
+        <EditText
+            android:id="@+id/confirma_senha"
+            android:hint="confirma senha"
+            android:inputType="textPassword"
+            android:textColor="@color/colorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_registrar"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:text="Registrar"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp" />
+
+
+
+</LinearLayout>
