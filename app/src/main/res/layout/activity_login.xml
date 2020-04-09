@@ -11,13 +11,16 @@
     android:paddingTop="80dp"
     tools:context=".LoginActivity">
 
+    /// imagem logo
     <ImageView
         android:id="@+id/logo"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginBottom="30dp"
-        android:src="@drawable/Avengers-Logo-715x715"
+        android:src="@drawable/logo"
      />
+
+    /// Editext do email
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/layoutemail"
         android:layout_width="match_parent"
@@ -25,11 +28,62 @@
         android:layout_below="@id/logo">
         <EditText
             android:id="@+id/edt_email"
-            android:hint="email"
-            android:layout_width="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:textColor="@color/colorText"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
     </com.google.android.material.textfield.TextInputLayout>
+
+    /// editext da senha
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutsenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutemail">
+        <EditText
+            android:id="@+id/edt_senha"
+            android:inputType="textEmailAddress"
+            android:hint="Senha"
+            android:textColor="@color/colorText"
+            app:passwordToggleEnabled="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    /// barra de progresso
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_marginTop="35dp"
+        android:layout_below="@id/layoutsenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    /// botão de login
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_below="@id/layoutsenha"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/colorPrimary2"
+        android:text="LOGIN"
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    /// Textview
+    <TextView
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:text="Register"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
 
 
 </RelativeLayout>
