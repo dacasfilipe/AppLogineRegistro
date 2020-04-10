@@ -74,6 +74,7 @@
 
     /// Textview
     <TextView
+        android:id="@+id/txt_registro"
         android:layout_marginBottom="20dp"
         android:gravity="center"
         android:textColor="@color/colorAccent"

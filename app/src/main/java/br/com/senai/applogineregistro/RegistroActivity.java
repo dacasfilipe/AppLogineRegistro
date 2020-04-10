@@ -28,7 +28,7 @@ public class RegistroActivity extends AppCompatActivity {
     private EditText nome,email,senha,confirma_senha;
     private Button btn_registrar;
     private ProgressBar loading;
-    private static String URL_Registro = "http://192.168.0.103/applogin/registro.php";
+    private static String URL_Registro = "http://192.168.0.104/applogin/registro.php";
     //ver pelo cmd ipconfig/all
 
     @Override

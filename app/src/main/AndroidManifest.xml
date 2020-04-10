@@ -13,7 +13,7 @@
         android:theme="@style/AppThemeLogin"
         android:usesCleartextTraffic="true">
 
-        <activity android:name=".LoginActivity">
+        <activity android:name=".RegistroActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,7 +21,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".RegistroActivity" android:theme="@style/AppThemeRegistro"></activity>
+        <activity android:name=".LoginActivity" android:theme="@style/AppThemeRegistro"></activity>
     </application>
 
 </manifest>
