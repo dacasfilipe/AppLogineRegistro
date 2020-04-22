@@ -44,7 +44,7 @@
         android:layout_below="@id/layoutemail">
         <EditText
             android:id="@+id/edt_senha"
-            android:inputType="textEmailAddress"
+            android:inputType="textPassword"
             android:hint="Senha"
             android:textColor="@color/colorText"
             app:passwordToggleEnabled="true"
